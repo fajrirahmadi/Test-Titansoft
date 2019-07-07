@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_medium"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/rankTextView"
+            style="@style/normalTextViewBlack"
+            android:text="1"
+            android:textSize="@dimen/text_large"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/usernameTextView"
+            style="@style/normalTextViewBlack"
+            android:layout_centerVertical="true"
+            android:text="Fajri Rahmadi"
+            android:layout_toEndOf="@id/rankTextView"
+            android:layout_marginStart="@dimen/margin_medium"/>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_medium"
+        android:background="@color/white"
+        tools:context=".display.view.MainActivity">
+
+    <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="input user id"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/searchButton"
+            android:layout_gravity="end"
+            android:padding="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium">
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/balance1"
+                style="@style/normalTextViewBlack"
+                android:padding="@dimen/margin_medium"
+                android:layout_width="@dimen/no_margin"
+                android:text="Balance 1"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/balance2"
+                style="@style/normalTextViewBlack"
+                android:padding="@dimen/margin_medium"
+                android:layout_width="@dimen/no_margin"
+                android:gravity="center"
+                android:text="Balance 2"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+            android:layout_margin="@dimen/no_margin"
+            style="@style/CardNormal">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/margin_medium"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textBalance"
+                    style="@style/normalTextViewBlack"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:text="Balance 1"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_below="@id/textBalance"
+                    style="@style/normalTextViewBlack"
+                    android:text="Star Balance"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/balanceTextView"
+                    android:layout_below="@id/textBalance"
+                    style="@style/normalTextViewBlack"
+                    android:layout_alignParentEnd="true"
+                    android:text="1.000.000"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    style="@style/normalTextViewBlack"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_below="@id/balanceTextView"
+                    android:text="Diamon Balance"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:id="@+id/diamondBalance"
+                    android:layout_below="@id/balanceTextView"
+                    style="@style/normalTextViewBlack"
+                    android:layout_alignParentEnd="true"
+                    android:text="1.000.000"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/margin_medium"
+            android:id="@+id/rankRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            android:visibility="gone"
+            style="@style/LoadingStyleGreen"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>

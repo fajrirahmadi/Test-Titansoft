@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1979D9</color>
+    <color name="colorPrimaryDark">#0a6aba</color>
+    <color name="colorAccent">#2191F1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#333333</color>
+    <color name="red">#C63636</color>
+    <color name="baseBackground">#FAFAFA</color>
+    <color name="profileBackgroudColor">#F5F5F5</color>
+    <color name="lineColor">#D8D8D8</color>
+    <color name="line_color">#D8D8D8</color>
+    <color name="hintColor">#DAEFDA</color>
+    <color name="hintColorWhite">#D8D8D8</color>
+    <color name="grey">#A1A1A1</color>
+    <color name="yellow">#EFD538</color>
+    <color name="orange">#F2A03A</color>
+    <color name="endButton">#EFD538</color>
+    <color name="icon_color">#D8D8D8</color>
+    <color name="startGreenButton">#1A9E4A</color>
+    <color name="endGreenButton">#70C441</color>
+    <color name="link">#FFF</color>
+    <color name="blue">#0099CC</color>
+    <color name="starYellow">#9ECD00</color>
+    <color name="endYellow">#B1DF21</color>
+    <color name="text_color">#333333</color>
+</resources>
